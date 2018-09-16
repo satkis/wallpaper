@@ -12,6 +12,9 @@
 		FF2F4D2B214E967E00B5FB4E /* WallpaperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F4D2A214E967E00B5FB4E /* WallpaperCell.swift */; };
 		FF2F4D2E214E9DCB00B5FB4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F4D2D214E9DCB00B5FB4E /* Constants.swift */; };
 		FF2F4D30214EAD0C00B5FB4E /* FeedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F4D2F214EAD0C00B5FB4E /* FeedLayout.swift */; };
+		FF2F4D32214EDE1400B5FB4E /* WallpaperDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F4D31214EDE1400B5FB4E /* WallpaperDetailVC.swift */; };
+		FF2F4D35214EED1C00B5FB4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2F4D34214EED1B00B5FB4E /* GoogleService-Info.plist */; };
+		FF2F4D38214EFE8B00B5FB4E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F4D37214EFE8B00B5FB4E /* DataService.swift */; };
 		FFCD43DE214E5B0F00898071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD43DD214E5B0F00898071 /* AppDelegate.swift */; };
 		FFCD43E0214E5B0F00898071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD43DF214E5B0F00898071 /* ViewController.swift */; };
 		FFCD43E3214E5B0F00898071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCD43E1214E5B0F00898071 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 		FF2F4D2A214E967E00B5FB4E /* WallpaperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCell.swift; sourceTree = "<group>"; };
 		FF2F4D2D214E9DCB00B5FB4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF2F4D2F214EAD0C00B5FB4E /* FeedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLayout.swift; sourceTree = "<group>"; };
+		FF2F4D31214EDE1400B5FB4E /* WallpaperDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetailVC.swift; sourceTree = "<group>"; };
+		FF2F4D34214EED1B00B5FB4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF2F4D37214EFE8B00B5FB4E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FFCD43DA214E5B0F00898071 /* wallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCD43DD214E5B0F00898071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFCD43DF214E5B0F00898071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,23 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		FF2F4D33214EDE1900B5FB4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F4D31214EDE1400B5FB4E /* WallpaperDetailVC.swift */,
+				FFCD43DF214E5B0F00898071 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF2F4D36214EFE7B00B5FB4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F4D37214EFE8B00B5FB4E /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FFCD43D1214E5B0F00898071 = {
 			isa = PBXGroup;
 			children = (
@@ -113,16 +136,18 @@
 		FFCD43DC214E5B0F00898071 /* wallpaper */ = {
 			isa = PBXGroup;
 			children = (
+				FF2F4D36214EFE7B00B5FB4E /* Services */,
 				FF2F4D2C214E9DAB00B5FB4E /* Details */,
 				FF2F4D26214E71D600B5FB4E /* Model */,
 				FF2F4D29214E964B00B5FB4E /* View */,
+				FF2F4D33214EDE1900B5FB4E /* Controller */,
 				FFCD43DD214E5B0F00898071 /* AppDelegate.swift */,
-				FFCD43DF214E5B0F00898071 /* ViewController.swift */,
 				FFCD43E1214E5B0F00898071 /* Main.storyboard */,
 				FFCD43E7214E5B1000898071 /* Assets.xcassets */,
 				FFCD43E9214E5B1000898071 /* LaunchScreen.storyboard */,
 				FFCD43EC214E5B1000898071 /* Info.plist */,
 				FFCD43E4214E5B0F00898071 /* wallpaper.xcdatamodeld */,
+				FF2F4D34214EED1B00B5FB4E /* GoogleService-Info.plist */,
 			);
 			path = wallpaper;
 			sourceTree = "<group>";
@@ -190,6 +215,7 @@
 				FFCD43EB214E5B1000898071 /* LaunchScreen.storyboard in Resources */,
 				FFCD43E8214E5B1000898071 /* Assets.xcassets in Resources */,
 				FFCD43E3214E5B0F00898071 /* Main.storyboard in Resources */,
+				FF2F4D35214EED1C00B5FB4E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,11 +229,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-wallpaper/Pods-wallpaper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -239,12 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2F4D38214EFE8B00B5FB4E /* DataService.swift in Sources */,
 				FF2F4D2B214E967E00B5FB4E /* WallpaperCell.swift in Sources */,
 				FFCD43E0214E5B0F00898071 /* ViewController.swift in Sources */,
 				FFCD43E6214E5B0F00898071 /* wallpaper.xcdatamodeld in Sources */,
 				FF2F4D30214EAD0C00B5FB4E /* FeedLayout.swift in Sources */,
 				FF2F4D28214E71EE00B5FB4E /* Wallpaper.swift in Sources */,
 				FFCD43DE214E5B0F00898071 /* AppDelegate.swift in Sources */,
+				FF2F4D32214EDE1400B5FB4E /* WallpaperDetailVC.swift in Sources */,
 				FF2F4D2E214E9DCB00B5FB4E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,14 +10,14 @@ import UIKit
 
 struct FeedLayoutConstants {
     struct Cell {
-        static let standardHeight: CGFloat = 140
-        static let featureHeight: CGFloat = 270
+        static let standardHeight: CGFloat = 130
+        static let featureHeight: CGFloat = 280
     }
 }
 
 class FeedLayout: UICollectionViewLayout {
     
-    let dragOffset: CGFloat = 200.0
+    let dragOffset: CGFloat = 180.0
     var cache = [UICollectionViewLayoutAttributes]()
     
     var featuredItemIndex: Int {
